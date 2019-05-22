@@ -14,7 +14,7 @@ export class BlogListComponent implements OnInit {
 
   ngOnInit() {
     this.blogPost.push(new BlogPost('Blog Title 1','Summary 1'));
-    this.blogPost.push(new BlogPost('Blog Title 2','Summary 2'));
+    this.blogPost.push(new BlogPost('Blog Title 2','The summary is too big. Lets learn to use the ... feature and implementing pipe'));
   }
 
 }
