@@ -3,8 +3,15 @@
   [post]="post">
 </app-blog-post-tile> -->
 
+<!-- Parent Component -->
+
+<a href="#" (click)="expandAll()">Expand All</a>
+
 <app-blog-post-tile 
-  *ngFor="let post of blogPost[0]"
+  *ngFor="let post of blogPost[currentPage]"
   [post]="post">
 </app-blog-post-tile>
-<app-paginator></app-paginator>
+<app-paginator [numberOfPages]="blogPost.length" (pageNumberClick)="updatePage($event)"></app-paginator>
+
+<!-- for demonstrating encapsulation in css -->
+<!-- <a href="#" class="btn btn-primary blog-btn">Read</a> -->
