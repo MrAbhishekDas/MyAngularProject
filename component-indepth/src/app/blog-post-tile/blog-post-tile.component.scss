@@ -4,6 +4,14 @@
     font-weight: 900
 }
 
-.blog-tile {
+
+// .blog-tile {
+//     margin: 20px
+// }
+// this host applies the property to one level up ie parent
+
+// while using host we have to make viewEncapsulation to default
+
+.host {
     margin: 20px
 }

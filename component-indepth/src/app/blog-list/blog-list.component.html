@@ -7,11 +7,18 @@
 
 <a href="#" (click)="expandAll()">Expand All</a>
 
+<!-- Removing multiple components -->
 <app-blog-post-tile 
   *ngFor="let post of blogPost[currentPage]"
-  [post]="post">
+  [post]="post" #tile>
 </app-blog-post-tile>
 <app-paginator [numberOfPages]="blogPost.length" (pageNumberClick)="updatePage($event)"></app-paginator>
 
 <!-- for demonstrating encapsulation in css -->
 <!-- <a href="#" class="btn btn-primary blog-btn">Read</a> -->
+
+<!-- <app-blog-post-tile [post]="blogPost[0][0]" #tile></app-blog-post-tile>
+<app-paginator 
+  [numberOfPages]="blogPost.length" 
+  (pageNumberClick)="updatePage($event)">
+</app-paginator> -->
