@@ -120,4 +120,9 @@ export class BlogListComponent implements OnInit {
     this.blogPostTileComponent.forEach(e => e.showFullSummary());
   }
 
+  favAll(){
+    // this.blogPostTileComponent.showFullSummary();
+    
+    this.blogPost[this.currentPage].forEach(post => post.isFav = true);
+  }
 }

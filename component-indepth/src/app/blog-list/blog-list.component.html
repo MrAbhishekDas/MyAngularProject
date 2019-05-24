@@ -5,8 +5,12 @@
 
 <!-- Parent Component -->
 
-<a href="#" (click)="expandAll()">Expand All</a>
-
+<p>
+  <a href="#" (click)="expandAll()">Expand All</a>
+</p>
+<p>
+  <a href="#" (click)="favAll()">Fav All</a>
+</p>
 <!-- Removing multiple components -->
 <app-blog-post-tile 
   *ngFor="let post of blogPost[currentPage]"
