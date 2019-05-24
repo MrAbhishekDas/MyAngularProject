@@ -41,4 +41,8 @@ export class BlogPostTileComponent implements OnInit {
     this.post.summary = this.fullSum;
   }
 
+  markFav() {
+    this.post.isFav = !this.post.isFav;
+  }
+
 }
