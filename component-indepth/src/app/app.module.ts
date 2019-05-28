@@ -7,6 +7,8 @@ import { BlogListComponent } from './blog-list/blog-list.component';
 import { TruncatePipe } from './truncate.pipe';
 import { PaginatorComponent } from './paginator/paginator.component';
 import { BlogDataService } from './blog-data.service';
+import { FormsModule } from '@angular/forms';
+import { HeroesComponent } from './heroes/heroes.component'; // <-- NgModel lives here
 
 @NgModule({
   declarations: [
@@ -14,10 +16,12 @@ import { BlogDataService } from './blog-data.service';
     BlogPostTileComponent,
     BlogListComponent,
     TruncatePipe,
-    PaginatorComponent
+    PaginatorComponent,
+    HeroesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [
     TruncatePipe,

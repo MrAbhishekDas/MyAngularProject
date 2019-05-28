@@ -10,7 +10,10 @@
 
 <div class="card blog-tile" [ngClass]="{'fav': post.isFav}">
   <div class="card-body">
-    <h5 class="card-title">{{post.title}}</h5>
+
+    <!-- The word uppercase in the interpolation binding, right after the pipe operator ( | ), activates the built-in UppercasePipe -->
+    <h5 class="card-title">{{post.title | uppercase}}</h5>
+    
     <!-- <p (click)="showFullSummary()" class="card-text">{{post.summary | truncate: [30]}}</p> -->
     <p (click)="showFullSummary()" class="card-text">{{post.summary}}</p>
 

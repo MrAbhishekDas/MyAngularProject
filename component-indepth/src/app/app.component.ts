@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'component-indepth';
+  //title = 'component-indepth';
+  title = 'Tour of Heroes and Components in Depth';
 }
